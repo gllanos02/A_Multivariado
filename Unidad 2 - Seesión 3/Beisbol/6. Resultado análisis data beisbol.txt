@@ -1,0 +1,246 @@
+library(readxl)
+> beisbol <- read_excel("C:/Users/brisa/Downloads/beisbol.xlsx")
+> View(beisbol)
+> round(cor(x = beisbol, method = "pearson"), 3)
+                                 Age  Games Minutes Played Fields Goal Fields Goal Attempted 3-points Field Goal
+Age                            1.000  0.090          0.168       0.093                 0.101               0.174
+Games                          0.090  1.000          0.605       0.512                 0.488               0.384
+Minutes Played                 0.168  0.605          1.000       0.880                 0.892               0.687
+Fields Goal                    0.093  0.512          0.880       1.000                 0.975               0.648
+Fields Goal Attempted          0.101  0.488          0.892       0.975                 1.000               0.735
+3-points Field Goal            0.174  0.384          0.687       0.648                 0.735               1.000
+3-points Field Goal Attempted  0.162  0.363          0.698       0.647                 0.755               0.978
+2-points Field Goal            0.034  0.453          0.767       0.934                 0.863               0.334
+2-points Field Goal Attempted  0.036  0.445          0.791       0.940                 0.904               0.389
+Free Throws                    0.082  0.375          0.710       0.841                 0.829               0.489
+Free Throws Attempted          0.060  0.378          0.712       0.842                 0.816               0.428
+Offensive Rebounds             0.001  0.292          0.396       0.426                 0.301              -0.133
+Defensive Rebounds             0.112  0.453          0.719       0.722                 0.656               0.305
+Total Rebounds                 0.085  0.432          0.665       0.676                 0.588               0.191
+Assists                        0.164  0.374          0.693       0.698                 0.731               0.510
+Steals                         0.103  0.415          0.734       0.637                 0.653               0.468
+Blocks                         0.029  0.284          0.410       0.414                 0.322               0.016
+Turnovers                      0.089  0.402          0.762       0.822                 0.828               0.500
+Personal Fouls                 0.101  0.455          0.729       0.615                 0.584               0.343
+Points                         0.108  0.503          0.881       0.990                 0.981               0.709
+Rank                          -0.047 -0.033         -0.050      -0.015                -0.012              -0.033
+Year                          -0.037 -0.101          0.028       0.035                 0.029               0.081
+                              3-points Field Goal Attempted 2-points Field Goal 2-points Field Goal Attempted Free Throws
+Age                                                   0.162               0.034                         0.036       0.082
+Games                                                 0.363               0.453                         0.445       0.375
+Minutes Played                                        0.698               0.767                         0.791       0.710
+Fields Goal                                           0.647               0.934                         0.940       0.841
+Fields Goal Attempted                                 0.755               0.863                         0.904       0.829
+3-points Field Goal                                   0.978               0.334                         0.389       0.489
+3-points Field Goal Attempted                         1.000               0.343                         0.402       0.507
+2-points Field Goal                                   0.343               1.000                         0.981       0.813
+2-points Field Goal Attempted                         0.402               0.981                         1.000       0.827
+Free Throws                                           0.507               0.813                         0.827       1.000
+Free Throws Attempted                                 0.449               0.842                         0.847       0.984
+Offensive Rebounds                                   -0.144               0.590                         0.514       0.354
+Defensive Rebounds                                    0.307               0.751                         0.716       0.619
+Total Rebounds                                        0.189               0.748                         0.698       0.577
+Assists                                               0.535               0.625                         0.672       0.665
+Steals                                                0.486               0.569                         0.595       0.531
+Blocks                                                0.013               0.504                         0.441       0.358
+Turnovers                                             0.526               0.783                         0.814       0.790
+Personal Fouls                                        0.353               0.601                         0.585       0.501
+Points                                                0.709               0.893                         0.907       0.886
+Rank                                                 -0.033              -0.003                         0.004      -0.032
+Year                                                  0.084               0.006                        -0.014       0.025
+                              Free Throws Attempted Offensive Rebounds Defensive Rebounds Total Rebounds Assists Steals
+Age                                           0.060              0.001              0.112          0.085   0.164  0.103
+Games                                         0.378              0.292              0.453          0.432   0.374  0.415
+Minutes Played                                0.712              0.396              0.719          0.665   0.693  0.734
+Fields Goal                                   0.842              0.426              0.722          0.676   0.698  0.637
+Fields Goal Attempted                         0.816              0.301              0.656          0.588   0.731  0.653
+3-points Field Goal                           0.428             -0.133              0.305          0.191   0.510  0.468
+3-points Field Goal Attempted                 0.449             -0.144              0.307          0.189   0.535  0.486
+2-points Field Goal                           0.842              0.590              0.751          0.748   0.625  0.569
+2-points Field Goal Attempted                 0.847              0.514              0.716          0.698   0.672  0.595
+Free Throws                                   0.984              0.354              0.619          0.577   0.665  0.531
+Free Throws Attempted                         1.000              0.433              0.666          0.636   0.650  0.538
+Offensive Rebounds                            0.433              1.000              0.724          0.852   0.097  0.249
+Defensive Rebounds                            0.666              0.724              1.000          0.978   0.436  0.494
+Total Rebounds                                0.636              0.852              0.978          1.000   0.360  0.450
+Assists                                       0.650              0.097              0.436          0.360   1.000  0.641
+Steals                                        0.538              0.249              0.494          0.450   0.641  1.000
+Blocks                                        0.415              0.651              0.640          0.683   0.121  0.303
+Turnovers                                     0.801              0.330              0.631          0.578   0.827  0.627
+Personal Fouls                                0.537              0.550              0.682          0.683   0.399  0.533
+Points                                        0.875              0.365              0.695          0.637   0.715  0.637
+Rank                                         -0.034             -0.049             -0.061         -0.061   0.017 -0.020
+Year                                          0.023              0.024              0.048          0.044   0.038  0.012
+                              Blocks Turnovers Personal Fouls Points   Rank   Year
+Age                            0.029     0.089          0.101  0.108 -0.047 -0.037
+Games                          0.284     0.402          0.455  0.503 -0.033 -0.101
+Minutes Played                 0.410     0.762          0.729  0.881 -0.050  0.028
+Fields Goal                    0.414     0.822          0.615  0.990 -0.015  0.035
+Fields Goal Attempted          0.322     0.828          0.584  0.981 -0.012  0.029
+3-points Field Goal            0.016     0.500          0.343  0.709 -0.033  0.081
+3-points Field Goal Attempted  0.013     0.526          0.353  0.709 -0.033  0.084
+2-points Field Goal            0.504     0.783          0.601  0.893 -0.003  0.006
+2-points Field Goal Attempted  0.441     0.814          0.585  0.907  0.004 -0.014
+Free Throws                    0.358     0.790          0.501  0.886 -0.032  0.025
+Free Throws Attempted          0.415     0.801          0.537  0.875 -0.034  0.023
+Offensive Rebounds             0.651     0.330          0.550  0.365 -0.049  0.024
+Defensive Rebounds             0.640     0.631          0.682  0.695 -0.061  0.048
+Total Rebounds                 0.683     0.578          0.683  0.637 -0.061  0.044
+Assists                        0.121     0.827          0.399  0.715  0.017  0.038
+Steals                         0.303     0.627          0.533  0.637 -0.020  0.012
+Blocks                         1.000     0.327          0.551  0.377 -0.042  0.064
+Turnovers                      0.327     1.000          0.588  0.830  0.011  0.018
+Personal Fouls                 0.551     0.588          1.000  0.598 -0.019  0.016
+Points                         0.377     0.830          0.598  1.000 -0.023  0.041
+Rank                          -0.042     0.011         -0.019 -0.023  1.000 -0.005
+Year                           0.064     0.018          0.016  0.041 -0.005  1.000
+> library(psych) 
+> multi.hist(x = beisbol, dcol = c("purple", "red"),dlty = c("dotted", "solid"), main = "")
+> library(GGally) 
+> ggpairs(beisbol, lower = list(continuous = "smooth"), diag = list(continuous = "barDiag"), axisLabels = "none")
+ plot: [1, 1] [---------------------------------------------------------------------------------------------]  0% est: 1s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [2, 2] [====>----------------------------------------------------------------------------------------]  5% est: 1m `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [3, 3] [========>------------------------------------------------------------------------------------] 10% est: 1m `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [4, 4] [============>--------------------------------------------------------------------------------] 14% est: 1m `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [5, 5] [=================>---------------------------------------------------------------------------] 19% est:48s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [6, 6] [=====================>-----------------------------------------------------------------------] 24% est:45s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [7, 7] [==========================>------------------------------------------------------------------] 29% est:43s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [8, 8] [==============================>--------------------------------------------------------------] 33% est:39s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [9, 9] [===================================>---------------------------------------------------------] 38% est:36s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [10, 10] [======================================>----------------------------------------------------] 43% est:34s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [11, 11] [==========================================>------------------------------------------------] 48% est:31s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [12, 12] [===============================================>-------------------------------------------] 52% est:28s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [13, 13] [===================================================>---------------------------------------] 57% est:26s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [14, 14] [=======================================================>-----------------------------------] 62% est:23s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [15, 15] [============================================================>------------------------------] 67% est:20s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [16, 16] [================================================================>--------------------------] 71% est:17s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [17, 17] [====================================================================>----------------------] 76% est:14s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [18, 18] [=========================================================================>-----------------] 81% est:11s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [19, 19] [=============================================================================>-------------] 86% est: 9s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [20, 20] [=================================================================================>---------] 90% est: 6s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ plot: [21, 21] [======================================================================================>----] 95% est: 3s `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.                                                        
+> #cuál de todas influye más. Elegir mejor predictor 
+> modelox = lm(beisbol$Points ~ beisbol$Age+beisbol$Games+beisbol$`Fields Goal`+beisbol$`3-points Field Goal`+beisbol$`2-points Field Goal`+
++                beisbol$`Free Throws`+beisbol$`Total Rebounds`+beisbol$Assists+beisbol$Blocks+beisbol$Turnovers+beisbol$`Personal Fouls`)
+> 
+> step(object = modelox, direction = "both", trace=1)
+Start:  AIC=-14266.96
+beisbol$Points ~ beisbol$Age + beisbol$Games + beisbol$`Fields Goal` + 
+    beisbol$`3-points Field Goal` + beisbol$`2-points Field Goal` + 
+    beisbol$`Free Throws` + beisbol$`Total Rebounds` + beisbol$Assists + 
+    beisbol$Blocks + beisbol$Turnovers + beisbol$`Personal Fouls`
+
+                                Df Sum of Sq     RSS      AIC
+- beisbol$`Total Rebounds`       1      0.00   14.48 -14268.9
+- beisbol$Age                    1      0.00   14.48 -14268.7
+- beisbol$Blocks                 1      0.00   14.48 -14268.7
+- beisbol$`Personal Fouls`       1      0.00   14.48 -14268.4
+- beisbol$Assists                1      0.01   14.49 -14267.4
+<none>                                         14.48 -14267.0
+- beisbol$Turnovers              1      0.02   14.50 -14264.7
+- beisbol$Games                  1      0.03   14.51 -14262.4
+- beisbol$`2-points Field Goal`  1      0.46   14.94 -14183.0
+- beisbol$`3-points Field Goal`  1      9.03   23.51 -12946.2
+- beisbol$`Fields Goal`          1     15.74   30.22 -12261.7
+- beisbol$`Free Throws`          1   1109.68 1124.16  -2396.5
+
+Step:  AIC=-14268.93
+beisbol$Points ~ beisbol$Age + beisbol$Games + beisbol$`Fields Goal` + 
+    beisbol$`3-points Field Goal` + beisbol$`2-points Field Goal` + 
+    beisbol$`Free Throws` + beisbol$Assists + beisbol$Blocks + 
+    beisbol$Turnovers + beisbol$`Personal Fouls`
+
+                                Df Sum of Sq     RSS      AIC
+- beisbol$Age                    1      0.00   14.48 -14270.7
+- beisbol$Blocks                 1      0.00   14.48 -14270.7
+- beisbol$`Personal Fouls`       1      0.00   14.48 -14270.4
+- beisbol$Assists                1      0.01   14.49 -14269.4
+<none>                                         14.48 -14268.9
++ beisbol$`Total Rebounds`       1      0.00   14.48 -14267.0
+- beisbol$Turnovers              1      0.02   14.50 -14266.7
+- beisbol$Games                  1      0.03   14.51 -14264.4
+- beisbol$`2-points Field Goal`  1      0.46   14.94 -14184.9
+- beisbol$`3-points Field Goal`  1      9.04   23.51 -12948.1
+- beisbol$`Fields Goal`          1     15.75   30.23 -12263.0
+- beisbol$`Free Throws`          1   1109.85 1124.32  -2398.1
+
+Step:  AIC=-14270.71
+beisbol$Points ~ beisbol$Games + beisbol$`Fields Goal` + beisbol$`3-points Field Goal` + 
+    beisbol$`2-points Field Goal` + beisbol$`Free Throws` + beisbol$Assists + 
+    beisbol$Blocks + beisbol$Turnovers + beisbol$`Personal Fouls`
+
+                                Df Sum of Sq     RSS      AIC
+- beisbol$Blocks                 1      0.00   14.48 -14272.5
+- beisbol$`Personal Fouls`       1      0.00   14.48 -14272.2
+- beisbol$Assists                1      0.01   14.49 -14271.0
+<none>                                         14.48 -14270.7
++ beisbol$Age                    1      0.00   14.48 -14268.9
++ beisbol$`Total Rebounds`       1      0.00   14.48 -14268.7
+- beisbol$Turnovers              1      0.02   14.50 -14268.2
+- beisbol$Games                  1      0.03   14.51 -14266.2
+- beisbol$`2-points Field Goal`  1      0.46   14.94 -14186.9
+- beisbol$`3-points Field Goal`  1      9.04   23.52 -12949.7
+- beisbol$`Fields Goal`          1     15.77   30.25 -12263.3
+- beisbol$`Free Throws`          1   1110.45 1124.93  -2398.6
+
+Step:  AIC=-14272.49
+beisbol$Points ~ beisbol$Games + beisbol$`Fields Goal` + beisbol$`3-points Field Goal` + 
+    beisbol$`2-points Field Goal` + beisbol$`Free Throws` + beisbol$Assists + 
+    beisbol$Turnovers + beisbol$`Personal Fouls`
+
+                                Df Sum of Sq     RSS      AIC
+- beisbol$`Personal Fouls`       1      0.00   14.49 -14273.6
+<none>                                         14.48 -14272.5
+- beisbol$Assists                1      0.01   14.49 -14272.4
++ beisbol$Blocks                 1      0.00   14.48 -14270.7
++ beisbol$Age                    1      0.00   14.48 -14270.7
++ beisbol$`Total Rebounds`       1      0.00   14.48 -14270.5
+- beisbol$Turnovers              1      0.02   14.51 -14270.0
+- beisbol$Games                  1      0.04   14.52 -14267.8
+- beisbol$`2-points Field Goal`  1      0.46   14.94 -14188.6
+- beisbol$`3-points Field Goal`  1      9.04   23.52 -12951.6
+- beisbol$`Fields Goal`          1     15.77   30.25 -12265.0
+- beisbol$`Free Throws`          1   1112.78 1127.26  -2394.9
+
+Step:  AIC=-14273.64
+beisbol$Points ~ beisbol$Games + beisbol$`Fields Goal` + beisbol$`3-points Field Goal` + 
+    beisbol$`2-points Field Goal` + beisbol$`Free Throws` + beisbol$Assists + 
+    beisbol$Turnovers
+
+                                Df Sum of Sq     RSS      AIC
+<none>                                         14.49 -14273.6
+- beisbol$Assists                1      0.01   14.50 -14272.8
++ beisbol$`Personal Fouls`       1      0.00   14.48 -14272.5
++ beisbol$Blocks                 1      0.00   14.48 -14272.2
++ beisbol$`Total Rebounds`       1      0.00   14.49 -14271.8
++ beisbol$Age                    1      0.00   14.49 -14271.8
+- beisbol$Turnovers              1      0.03   14.52 -14269.4
+- beisbol$Games                  1      0.04   14.53 -14267.4
+- beisbol$`2-points Field Goal`  1      0.47   14.95 -14189.4
+- beisbol$`3-points Field Goal`  1      9.05   23.53 -12952.0
+- beisbol$`Fields Goal`          1     15.76   30.25 -12267.0
+- beisbol$`Free Throws`          1   1121.43 1135.92  -2376.1
+
+Call:
+lm(formula = beisbol$Points ~ beisbol$Games + beisbol$`Fields Goal` + 
+    beisbol$`3-points Field Goal` + beisbol$`2-points Field Goal` + 
+    beisbol$`Free Throws` + beisbol$Assists + beisbol$Turnovers)
+
+Coefficients:
+                  (Intercept)                  beisbol$Games          beisbol$`Fields Goal`  beisbol$`3-points Field Goal`  
+                   -0.0071773                      0.0001907                      1.7056463                      1.2898652  
+beisbol$`2-points Field Goal`          beisbol$`Free Throws`                beisbol$Assists              beisbol$Turnovers  
+                    0.2928880                      0.9969206                     -0.0024968                      0.0103540  
+
+> library(car)
+> vif(modelox)
+                  beisbol$Age                 beisbol$Games         beisbol$`Fields Goal` beisbol$`3-points Field Goal` 
+                     1.078693                      1.488867                   2396.256293                    343.639783 
+beisbol$`2-points Field Goal`         beisbol$`Free Throws`      beisbol$`Total Rebounds`               beisbol$Assists 
+                  1563.348942                      3.965359                      3.686443                      3.803235 
+               beisbol$Blocks             beisbol$Turnovers      beisbol$`Personal Fouls` 
+                     2.091037                      6.118527                      2.379069 
+> # 3d
+> library(rgl)
+> plot3d(beisbol$`Fields Goal`, beisbol$`3-points Field Goal`, beisbol$Points, pch = ".", size = 0.5)
